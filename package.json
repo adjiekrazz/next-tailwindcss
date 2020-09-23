@@ -1,5 +1,5 @@
 {
-  "name": "with-tailwindcss",
+  "name": "next-tailwindcss",
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
@@ -8,13 +8,19 @@
   },
   "dependencies": {
     "next": "latest",
+    "nprogress": "^0.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "postcss-flexbugs-fixes": "4.2.1",
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^1.7.4"
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0",
+    "tailwindcss": "^1.8.7"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "description": "This is an example of using [Tailwind CSS](https://tailwindcss.com) in a Next.js project.",
+  "main": "postcss.config.js",
+  "author": ""
 }

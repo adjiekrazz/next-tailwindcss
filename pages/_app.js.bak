@@ -1,0 +1,14 @@
+import Loader from '../components/loader'
+import '../styles/index.css'
+
+const TIMEOUT = 400
+
+function MyApp({ Component, pageProps }) {
+  return (
+      <Component {...pageProps} />
+    )
+  
+  // return <Component {...pageProps} />
+}
+
+export default MyApp

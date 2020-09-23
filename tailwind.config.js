@@ -10,6 +10,6 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: ['group-hover', 'responsive', 'hover'],
   plugins: [],
 }
