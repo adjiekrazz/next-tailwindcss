@@ -4,7 +4,7 @@ import Link from 'next/link'
 const ChatRoom = () => {
     return (
         <Layout title="Krazz it! - Chat Room">
-            <div className="container mx-auto">
+            <div className="container mx-2 lg:mx-auto px-auto lg:pl-3">
                 <div className="text-gray-700 bg-white mt-8 mx-auto">
                     <p>Chat Room</p>
                 </div>
@@ -29,9 +29,8 @@ const ChatRoom = () => {
                         </div>
                     </div>
                     <div className="col-span-2 box-border h-150 w-auto inline text-gray-700 bg-white py-1 px-4 mx-2">
-                        <div class="group text-black">
-                            <p>Hover me for text transitions!</p>
-                            <button className="btn-blue transition invisible transform duration-500 ease-in-out group-hover:-translate-y-5 group-hover:visible">Btn Blue</button>
+                        <div className="group text-black">
+                            <p>Chat should be here!</p>
                         </div>
                     </div>
                 </div>

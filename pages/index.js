@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 function IndexPage({ title }) {
   return (
     <Layout title="Krazz it!">
-      <div className="container mx-auto">
+      <div className="container mx-2 lg:mx-auto pl-3">
         <div className="text-gray-700 bg-white mt-8 mx-auto">
           <p>Dashboard</p>
         </div>

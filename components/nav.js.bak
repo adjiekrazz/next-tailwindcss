@@ -1,0 +1,115 @@
+import Link from 'next/link'
+
+export default function Nav() {
+  return (
+    <nav className="flex items-center justify-between flex-wrap bg-black p-3 shadow-lg">
+        <div className="container mx-auto">
+            <div className="block lg:hidden">
+                <button className="flex items-center px-3 py-2 border rounded text-white border-gray-200 hover:text-red-600 hover:border-red-600">
+                <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                </button>
+            </div>
+            <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div className="text-sm lg:flex-grow">
+                    <div className="group lg:inline-block relative">
+                        <Link href="/">
+                            <a className="block mt-4 lg:inline-block lg:mt-0 text-white group-hover:text-red-600 md:mr-6 lg:mr-10">
+                                Dashboard
+                            </a>
+                        </Link>
+                    </div>
+                    <div className="lg:inline-block relative">
+                        <Link href="">
+                            <a className="block mt-4 lg:inline-block lg:mt-0 text-white group-hover:text-red-600 md:mr-6 lg:mr-10">
+                                Data Karyawan
+                                <svg className="fill-current h-4 w-4 ml-2 inline-block text-white group-hover:text-red-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                            </a>
+                        </Link>
+                        <ul className="shadow-lg rounded absolute hidden text-gray-700 -ml-4 pt-4 lg:group-hover:block">
+                            <li className="inline-block">
+                                <ul>
+                                    <li>
+                                        <Link href="#">
+                                            <a className="bg-white hover:text-red-600 py-2 px-4 mt-2 block whitespace-no-wrap">
+                                                Karyawan Aktif
+                                            </a>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="#">
+                                            <a className="bg-white hover:text-red-600 py-2 px-4 mt-2 block whitespace-no-wrap">
+                                                Kontrak Karyawan
+                                            </a>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="#">
+                                            <a className="rounded bg-white hover:text-red-600 py-2 px-4 mt-2 block whitespace-no-wrap">
+                                                Surat Peringatan
+                                            </a>
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li className="inline-block">
+                                <ul>
+                                    <li>
+                                        <Link href="#">
+                                            <a href="#" className="bg-white hover:text-red-600 py-2 px-4 mt-2 block whitespace-no-wrap">
+                                                Karyawan Keluar
+                                            </a>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="#">
+                                            <a href="#" className="bg-white hover:text-red-600 py-2 px-4 mt-2 block whitespace-no-wrap">
+                                                Nomor Surat Peringatan
+                                            </a>
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="group lg:inline-block relative">
+                        <Link href="#">
+                            <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-red-600 md:mr-6 lg:mr-10">
+                                Examples
+                                <svg className="fill-current h-4 w-4 ml-2 inline-block text-white group-hover:text-red-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                            </a>
+                        </Link>
+                        <ul className="shadow-lg absolute hidden text-gray-700 -ml-4 pt-4 lg:group-hover:block">
+                            <li>
+                                <Link href="#">
+                                    <a href="#" className="rounded bg-white hover:text-red-600 py-2 px-4 mt-2 block whitespace-no-wrap">
+                                        Beginner
+                                    </a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#">
+                                    <a href="#" className="rounded bg-white hover:text-red-600 py-2 px-4 mt-2 block whitespace-no-wrap">
+                                        Intermediate
+                                    </a>
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="group lg:inline-block relative">
+                        <Link href="/chatroom">
+                            <a className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-red-600 md:mr-6 lg:mr-10">
+                                Chat Room
+                            </a>
+                        </Link>
+                    </div>
+                </div>
+                <div className="group lg:inline-block relative">
+                    <Link href="">
+                        <a className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white group-hover:border-transparent group-hover:text-white group-hover:bg-red-600 mt-4 lg:mt-0">Download</a>
+                    </Link>
+                </div>
+            </div>
+        </div>
+    </nav>
+  )
+}
