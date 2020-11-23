@@ -13,23 +13,23 @@ export default function Nav() {
         }
     })
     return (
-        <nav className="flex items-center justify-between flex-wrap bg-black pt-4 shadow-lg">
-            <div className="container mx-auto">
-                <div className="block lg:hidden">
-                    <button className="flex items-center px-3 py-2 border rounded text-white border-gray-200 hover:text-red-600 hover:border-red-600 mx-2 mb-4" onClick={() => setState(sate ^= true)}>
+        <nav className="flex items-center justify-between flex-wrap bg-black shadow-lg lg:h-12">
+            <div className="container mx-auto h-full">
+                <div className="flex h-full lg:hidden">
+                    <button className="flex items-center px-3 py-2 border rounded text-white border-gray-200 hover:text-red-600 hover:border-red-600 mx-2 my-2" onClick={() => setState(sate ^= true)}>
                     <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
                     </button>
                 </div>
-                <div className="w-full lg:flex flex-grow lg:items-center lg:w-auto hidden lg:block" id="nav">
-                    <ul className="lg:flex-grow text-sm lg:inline-block mx-2 lg:mx-auto md:block">
-                        <li className="group h-8 lg:inline-block relative">
+                <div className="hidden w-full lg:flex flex-grow lg:items-center lg:w-auto lg:block" id="nav">
+                    <ul className="lg:flex-grow text-sm lg:inline-block mx-2 lg:mx-auto md:block h-full p-3">
+                        <li className="group h-8 lg:inline-block h-full">
                             <Link href="/">
                                 <a className="block mt-4 lg:inline-block lg:mt-0 text-white group-hover:text-red-600 lg:mx-3">
                                     Dashboard
                                 </a>
                             </Link>  
                         </li>
-                        <li className="group h-8 lg:inline-block">
+                        <li className="group h-8 lg:inline-block h-full">
                             <Link href="#">
                                 <a className="block mt-4 lg:inline-block lg:mt-0 text-white group-hover:text-red-600 lg:mx-3">
                                     Data Karyawan
@@ -83,7 +83,7 @@ export default function Nav() {
                                 </li>
                             </ul>
                         </li>
-                        <li className="group h-8 lg:inline-block relative">
+                        <li className="group h-8 lg:inline-block relative h-full">
                             <Link href="#">
                                 <a className="block mt-4 lg:inline-block lg:mt-0 text-white group-hover:text-red-600 lg:mx-3">
                                     Form & Laporan
@@ -112,7 +112,7 @@ export default function Nav() {
                                 </li>
                             </ul>
                         </li>
-                        <li className="group h-8 lg:inline-block relative">
+                        <li className="group h-8 lg:inline-block relative h-full">
                             <Link href="#">
                                 <a className="block mt-4 lg:inline-block lg:mt-0 text-white group-hover:text-red-600 lg:mx-3">
                                     Data Barang
@@ -141,7 +141,7 @@ export default function Nav() {
                                 </li>
                             </ul>
                         </li>
-                        <li className="group h-8 lg:inline-block">
+                        <li className="group h-8 lg:inline-block h-full">
                             <Link href="#">
                                 <a className="block mt-4 lg:inline-block lg:mt-0 text-white group-hover:text-red-600 lg:mx-3">
                                     Pengaturan
@@ -189,7 +189,7 @@ export default function Nav() {
                                 </li>
                             </ul>
                         </li>
-                        <li className="group h-8 lg:inline-block">
+                        <li className="group h-8 lg:inline-block h-full">
                             <Link href="/chatroom">
                                 <a className="block mt-4 lg:inline-block lg:mt-0 text-white group-hover:text-red-600 lg:mx-3">
                                     Chat Room
